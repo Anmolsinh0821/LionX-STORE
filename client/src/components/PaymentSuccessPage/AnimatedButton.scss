@@ -1,0 +1,19 @@
+// AnimatedButton.scss
+.animated-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    background-image: linear-gradient(120deg, #8f6bde, #4d7af3);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    &:hover {
+        background-position: left bottom;
+        transform: scale(1.05);
+    }
+}
